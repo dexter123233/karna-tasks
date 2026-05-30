@@ -30,3 +30,6 @@ Thumbs.db
 # Build
 *.apk
 *.ipa
+android/app/build/
+android/build/
+android/.gradle/
