@@ -1,0 +1,13 @@
+{
+  "name": "karna-tasks",
+  "version": "1.0.0",
+  "description": "Full-stack task management app with Flutter frontend and PostgreSQL backend",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install",
+    "dev:server": "cd server && npm start",
+    "dev:flutter": "cd flutter_app && flutter run"
+  },
+  "keywords": ["flutter", "postgresql", "task-management"],
+  "author": "Karna AI",
+  "license": "MIT"
+}

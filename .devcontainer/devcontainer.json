@@ -1,0 +1,25 @@
+{
+  "name": "Karna Tasks - Flutter & PostgreSQL",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/flutter:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node-lts:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers-contrib/features/postgresql-bootstrapdata:1": {
+      "username": "karna",
+      "password": "karna123",
+      "database": "karna_tasks"
+    }
+  },
+  "postCreateCommand": "cd server && npm install && cd ../flutter_app && flutter pub get",
+  "forwardPorts": [3001, 53705],
+  "portsAttributes": {
+    "3001": {
+      "label": "API Server",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
